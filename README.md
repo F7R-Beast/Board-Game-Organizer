@@ -1,6 +1,4 @@
-# Read Me File!
-
----
+# Board Game Organizer | Read Me File!
 ### This project includes the following files: </br>
 #### Java Files:
 - [Game.java](src/main/java/com/teamproject/project/Game.java)

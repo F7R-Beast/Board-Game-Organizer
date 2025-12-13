@@ -7,23 +7,22 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teamproject.project.deleteGameController">
    <children>
       <TableView fx:id="gamesTable" layoutX="25.0" layoutY="60.0" prefHeight="280.0" prefWidth="888.0">
          <columns>
-            <TableColumn fx:id="idCol" prefWidth="40.0" text="ID" />
-            <TableColumn fx:id="titleCol" prefWidth="218.0" text="Title" />
-            <TableColumn fx:id="yearCol" prefWidth="103.0" text="Year Published" />
-            <TableColumn fx:id="minCol" minWidth="2.0" prefWidth="85.0" text="Min Players" />
-            <TableColumn fx:id="maxCol" prefWidth="88.0" text="Max Players" />
-            <TableColumn fx:id="minutesCol" prefWidth="120.0" text="Playing time (min)" />
-            <TableColumn fx:id="complexityCol" prefWidth="73.0" text="Complexity" />
-            <TableColumn fx:id="designerCol" prefWidth="160.0" text="Designer Name" />
+            <TableColumn fx:id="idCol" prefWidth="40.0" text="%Table.col.id" />
+            <TableColumn fx:id="titleCol" prefWidth="218.0" text="%Table.col.title" />
+            <TableColumn fx:id="yearCol" prefWidth="103.0" text="%Table.col.year" />
+            <TableColumn fx:id="minCol" minWidth="2.0" prefWidth="85.0" text="%Table.col.min" />
+            <TableColumn fx:id="maxCol" prefWidth="88.0" text="%Table.col.max" />
+            <TableColumn fx:id="minutesCol" prefWidth="120.0" text="%Table.col.minutes" />
+            <TableColumn fx:id="complexityCol" prefWidth="73.0" text="%Table.col.complexity" />
+            <TableColumn fx:id="designerCol" prefWidth="160.0" text="%Table.col.designer" />
          </columns>
       </TableView>
-      <Button layoutX="779.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteGame" prefHeight="25.0" prefWidth="134.0" text="Delete selected" />
-      <Text layoutX="328.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Game from Database">
+      <Button layoutX="779.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteGame" prefHeight="25.0" prefWidth="134.0" text="%deleteGame.deleteButton" />
+      <Text layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%deleteGame.title" textAlignment="CENTER" wrappingWidth="937.0">
          <font>
             <Font name="Calibri Bold" size="24.0" />
          </font>

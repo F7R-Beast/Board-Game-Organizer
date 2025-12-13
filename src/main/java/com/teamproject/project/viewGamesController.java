@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.*;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class viewGamesController implements Initializable{
@@ -28,6 +29,7 @@ public class viewGamesController implements Initializable{
     @FXML private TableColumn<Game, String> designerCol;
 
     private ObservableList<Game> gamesList = FXCollections.observableArrayList();
+    ResourceBundle bundle = ResourceBundle.getBundle("i18n.texts", Locale.getDefault());
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -53,7 +55,7 @@ public class viewGamesController implements Initializable{
             return;
         }else{
             modifyGameController.game = selected;
-            openWindow("modifyGame.fxml", "Modify Game");
+            openWindow("modifyGame.fxml", bundle.getString("modifyGame.fxml"));
             Game updated = modifyGameController.game;
 
             String sql = "UPDATE games SET title=?, year_published=?, min_players=?, " +
@@ -113,7 +115,9 @@ public class viewGamesController implements Initializable{
 
     private void openWindow(String fxml, String title) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
+            ResourceBundle bundle = ResourceBundle.getBundle("i18n.texts", Locale.getDefault());
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml), bundle);
             Parent root = loader.load();
 
             double width = root.prefWidth(-1);

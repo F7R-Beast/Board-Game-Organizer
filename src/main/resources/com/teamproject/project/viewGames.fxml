@@ -12,21 +12,21 @@
    <children>
       <TableView fx:id="gamesTable" layoutX="18.0" layoutY="70.0" prefHeight="280.0" prefWidth="888.0">
         <columns>
-            <TableColumn fx:id="idCol" prefWidth="40.0" text="ID" />
-          <TableColumn fx:id="titleCol" prefWidth="218.0" text="Title" />
-          <TableColumn fx:id="yearCol" prefWidth="103.0" text="Year Published" />
-            <TableColumn fx:id="minCol" minWidth="2.0" prefWidth="85.0" text="Min Players" />
-            <TableColumn fx:id="maxCol" prefWidth="88.0" text="Max Players" />
-            <TableColumn fx:id="minutesCol" prefWidth="120.0" text="Playing time (min)" />
-            <TableColumn fx:id="complexityCol" prefWidth="73.0" text="Complexity" />
-            <TableColumn fx:id="designerCol" prefWidth="160.0" text="Designer Name" />
+            <TableColumn fx:id="idCol" prefWidth="40.0" text="%Table.col.id" />
+          <TableColumn fx:id="titleCol" prefWidth="218.0" text="%Table.col.title" />
+          <TableColumn fx:id="yearCol" prefWidth="103.0" text="%Table.col.year" />
+            <TableColumn fx:id="minCol" minWidth="2.0" prefWidth="85.0" text="%Table.col.min" />
+            <TableColumn fx:id="maxCol" prefWidth="88.0" text="%Table.col.max" />
+            <TableColumn fx:id="minutesCol" prefWidth="120.0" text="%Table.col.minutes" />
+            <TableColumn fx:id="complexityCol" prefWidth="73.0" text="%Table.col.complexity" />
+            <TableColumn fx:id="designerCol" prefWidth="160.0" text="%Table.col.designer" />
         </columns>
       </TableView>
-      <Text layoutX="400.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Games">
+      <Text layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%viewGames.title" textAlignment="CENTER" wrappingWidth="924.0">
          <font>
             <Font name="Calibri Bold" size="24.0" />
          </font>
       </Text>
-      <Button layoutX="18.0" layoutY="376.0" mnemonicParsing="false" onAction="#modifyGame" prefHeight="25.0" prefWidth="142.0" text="Modify Selected" />
+      <Button layoutX="764.0" layoutY="378.0" mnemonicParsing="false" onAction="#modifyGame" prefHeight="25.0" prefWidth="142.0" text="%viewGames.modifyButton" />
    </children>
 </AnchorPane>

@@ -8,14 +8,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="396.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teamproject.project.modifyGameController">
+<AnchorPane prefHeight="396.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teamproject.project.modifyGameController">
    <children>
-      <Text layoutX="183.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Game">
+      <Text layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.title" textAlignment="CENTER" wrappingWidth="524.0">
          <font>
             <Font name="Calibri Bold" size="24.0" />
          </font>
       </Text>
-      <Text layoutX="21.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Name: ">
+      <Text layoutX="21.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.gameNameLabel">
          <font>
             <Font size="15.0" />
          </font>
@@ -24,7 +24,7 @@
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Text layoutX="22.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Published:">
+      <Text layoutX="22.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.yearPubLabel">
          <font>
             <Font size="15.0" />
          </font>
@@ -33,25 +33,25 @@
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Text layoutX="207.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum Player Count:">
+      <Text layoutX="207.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.minPlayersLabel">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="207.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Player Count:">
+      <Text layoutX="207.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.maxPlayersLabel">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField fx:id="minPlayersField" layoutX="375.0" layoutY="125.0" prefHeight="25.0" prefWidth="101.0">
+      <TextField fx:id="minPlayersField" layoutX="383.0" layoutY="124.0" prefHeight="25.0" prefWidth="101.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <TextField fx:id="maxPlayersField" layoutX="375.0" layoutY="159.0" prefHeight="25.0" prefWidth="101.0">
+      <TextField fx:id="maxPlayersField" layoutX="383.0" layoutY="158.0" prefHeight="25.0" prefWidth="101.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Text layoutX="21.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes Played:">
+      <Text layoutX="21.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.minutesPlayedLabel">
          <font>
             <Font size="15.0" />
          </font>
@@ -60,28 +60,28 @@
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Text layoutX="249.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game complexity:">
+      <Text layoutX="249.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.complexityLabel">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField fx:id="gameComplexityField" layoutX="376.0" layoutY="201.0" prefHeight="25.0" prefWidth="101.0">
+      <TextField fx:id="gameComplexityField" layoutX="398.0" layoutY="201.0" prefHeight="25.0" prefWidth="101.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Text fill="#00000099" layoutX="364.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(1.0 = Easy, 5.0 = hard)" />
-      <Text layoutX="21.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher Name">
+      <Text fill="#00000099" layoutX="327.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.complexityHint" />
+      <Text layoutX="21.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.publisherLabel">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField fx:id="userNameField" layoutX="138.0" layoutY="249.0" prefHeight="25.0" prefWidth="339.0">
+      <TextField fx:id="userNameField" layoutX="146.0" layoutY="248.0" prefHeight="25.0" prefWidth="339.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Button layoutX="365.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleApplyAction" prefHeight="25.0" prefWidth="118.0" text="Apply Changes" />
-      <Text fill="#00000099" layoutX="32.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empty for current year" />
-      <Text layoutX="21.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game ID:">
+      <Button layoutX="365.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleApplyAction" prefHeight="25.0" prefWidth="118.0" text="%modifyGame.applyButton" />
+      <Text fill="#00000099" layoutX="26.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.yearHint" />
+      <Text layoutX="21.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.idLabel">
          <font>
             <Font size="15.0" />
          </font>
@@ -91,17 +91,17 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </TextField>
-      <Text layoutX="27.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add minutes played:">
+      <Text layoutX="27.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%modifyGame.addMinutesLabel">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField fx:id="addMinutesField" layoutX="181.0" layoutY="314.0" prefHeight="25.0" prefWidth="101.0">
+      <TextField fx:id="addMinutesField" layoutX="232.0" layoutY="314.0" prefHeight="25.0" prefWidth="101.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
       <Line endX="100.0" layoutX="249.0" layoutY="294.0" startX="-100.0" />
-      <Button layoutX="298.0" layoutY="314.0" mnemonicParsing="false" onAction="#addMinutes" prefHeight="25.0" prefWidth="61.0" text="Add" />
+      <Button layoutX="353.0" layoutY="314.0" mnemonicParsing="false" onAction="#addMinutes" prefHeight="25.0" prefWidth="61.0" text="%modifyGame.addMinutesButton" />
    </children>
 </AnchorPane>

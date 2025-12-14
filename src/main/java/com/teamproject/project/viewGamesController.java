@@ -62,7 +62,7 @@ public class viewGamesController implements Initializable{
                     "max_players=?, playing_time_min=?, complexity=?, designer_name=? " +
                     "WHERE game_id=?";
 
-            try (Connection con = new Database().getConnection();
+            try (Connection con = Database.getInstance().getConnection();
                  PreparedStatement stmt = con.prepareStatement(sql)) {
 
                 stmt.setString(1, updated.getTitle());
@@ -87,7 +87,7 @@ public class viewGamesController implements Initializable{
     private void loadGamesFromDatabase() {
         String sql = "SELECT * FROM games";
 
-        try (Connection con = new Database().getConnection();
+        try (Connection con = Database.getInstance().getConnection();
              PreparedStatement stmt = con.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
 

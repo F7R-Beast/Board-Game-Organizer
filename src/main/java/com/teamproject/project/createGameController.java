@@ -67,7 +67,7 @@ public class createGameController {
             Game game = new Game(gameName, yearPublished, minPlayers, maxPlayers, minutesPlayed, gameComplexity);
 
             // insert into database
-            Database db = new Database();
+            Database db = Database.getInstance();
             Connection con = db.getConnection();
 
             String sql = "INSERT INTO Games (title, year_published, min_players, max_players, playing_time_min, complexity, designer_name) " +
@@ -82,8 +82,7 @@ public class createGameController {
             pstmt.setString(7, userName);
 
             pstmt.executeUpdate();
-            pstmt.close();
-            con.close();
+
 
             // reset fields
             gameNameField.setText("");

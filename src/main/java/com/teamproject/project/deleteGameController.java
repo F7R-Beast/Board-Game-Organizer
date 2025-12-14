@@ -54,7 +54,7 @@ public class deleteGameController implements Initializable {
             return;
         } else {
             String deleteQuery = "DELETE FROM Games WHERE game_id = ?";
-            try (Connection con = new Database().getConnection();
+            try (Connection con = Database.getInstance().getConnection();
                  PreparedStatement stmt = con.prepareStatement(deleteQuery)) {
 
                 stmt.setInt(1, selected.getId());
@@ -73,7 +73,7 @@ public class deleteGameController implements Initializable {
     private void loadGamesFromDatabase() {
         String sql = "SELECT * FROM games";
 
-        try (Connection con = new Database().getConnection();
+        try (Connection con = Database.getInstance().getConnection();
              PreparedStatement stmt = con.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
 
